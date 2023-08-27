@@ -1,0 +1,109 @@
+/* Global */
+*{
+    box-sizing: border-box;
+    position: relative;
+}
+
+html,body{
+    font-family: "微軟正黑體";
+}
+
+html{
+    height:100%;
+}
+
+body,body *{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+
+body{
+    min-height: 100vh;
+}
+
+
+
+
+
+a.nav-link{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.home{
+    background-color: rgba(0, 0, 0, 0.25);
+    height:715.2px;
+    background-image:url(../images/night.jpg);
+    background-size: cover;
+    background-position: center center;
+    justify-content: center; /* Align child elements horizontally */
+    align-items: center; /* Align child elements vertically */
+}
+
+
+
+
+
+.navbar *{
+    z-index:10;
+    flex-direction:row;
+    align-items: center;
+}
+
+a.logo{
+    background-image: url(../images/logo2.png);
+    background-repeat: no-repeat;
+    height:100px; width: 100px;
+    /* transform:scale(0.5); */
+    background-size: contain;
+    margin-left: 60px;
+}
+
+.banner{
+    z-index:1;
+    justify-content: center;
+    height: 100vh;
+}
+
+.banner p{
+    margin:0;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size:55px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.banner p.middle{
+    height:25px;
+}
+
+.banner p.id{
+    font-weight:normal;
+    font-size:35px;
+}
+
+.logos{
+    z-index:10;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ig,.fb,.gh{
+    z-index: 1;
+    height:50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ig{background-image: url(../images/ig-logo.png);}
+.fb{background-image: url(../images/fb-logo.png);}
+.gh{background-image: url(../images/gh-logo.png);}
