@@ -33,17 +33,14 @@ a.nav-link{
 }
 
 
-
-
-
-
-.home{
+.wrapper{
     background-color: rgba(0, 0, 0, 0.25);
     height:715.2px;
     background-image:url(../images/night.jpg);
     background-size: cover;
     background-position: center center;
-    justify-content: center; /* Align child elements horizontally */
+    /* justify-content: center;*/
+    /* Align child elements horizontally */
     align-items: center; /* Align child elements vertically */
 }
 
@@ -55,6 +52,11 @@ a.nav-link{
     z-index:10;
     flex-direction:row;
     align-items: center;
+}
+
+.navbar .container{
+    width: 100%;
+    justify-content: center;
 }
 
 a.logo{
@@ -69,10 +71,11 @@ a.logo{
 .banner{
     z-index:1;
     justify-content: center;
-    height: 100vh;
+    height: 615.2px;
+    text-align:center;
 }
 
-.banner p{
+.banner h1,.banner h2{
     margin:0;
     align-items: center;
     color: white;
@@ -85,12 +88,14 @@ a.logo{
     height:25px;
 }
 
-.banner p.id{
+.banner h2{
     font-weight:normal;
     font-size:35px;
+    margin-top: 20px;
 }
 
 .logos{
+    width:100%;
     z-index:10;
     flex-direction:row;
     align-items: center;
@@ -99,7 +104,8 @@ a.logo{
 
 .ig,.fb,.gh{
     z-index: 1;
-    height:50px;
+    height:50px; width:50px;
+    margin:20px;
     background-size: contain;
     background-repeat: no-repeat;
 }

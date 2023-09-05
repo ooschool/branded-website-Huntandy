@@ -1,0 +1,3 @@
+""並且在 css 使用 text-align: center 就可以讓 文字置中於畫面中，就可以解決你提到的第一個問題""
+
+* ""Navbar 裡面有用到 container ，但是 css 裡面沒有針對 container 給予寬度與置中的選項，需要補上""
