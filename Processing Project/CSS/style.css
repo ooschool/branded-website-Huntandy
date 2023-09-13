@@ -54,9 +54,17 @@ a.nav-link{
     align-items: center;
 }
 
-.navbar .container{
-    width: 100%;
+.navbar {
+    align-items: center;
+} 
+
+.container{
+    width: 1223px;
     justify-content: center;
+}
+
+.logo-container{
+
 }
 
 a.logo{
@@ -72,7 +80,7 @@ a.logo{
     z-index:1;
     justify-content: center;
     height: 615.2px;
-    text-align:center;
+
 }
 
 .banner h1,.banner h2{
@@ -82,6 +90,7 @@ a.logo{
     font-weight: bold;
     font-size:55px;
     font-family: 'Ubuntu', sans-serif;
+    text-align:center;
 }
 
 .banner p.middle{
