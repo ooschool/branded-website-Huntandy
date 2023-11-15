@@ -286,7 +286,31 @@ contact
     align-self: center;
     border-radius: 15px;
 }
+.contact h1{
+    align-items:center;
+}
 button.contact-btn{ 
     width: 133px; 
+    align-self:center;
 }
 
+/*------ 
+footer
+-------*/
+footer{
+    min-height: 100px;
+    width:100%;
+    background-color: #292C36;
+    color:white;
+    justify-content: center;
+}
+footer *{
+    align-items: center;
+}
+footer h3{
+    margin-bottom: 0px;
+}
+footer p{
+    font-size:12px;
+    font-weight: bold;
+}
