@@ -1,0 +1,116 @@
+   /* Two Underscores(__) represents AND.  
+Hyphen(-) does what hyphen does. */
+
+/* Global */
+*{
+    box-sizing: border-box;
+    position: relative;
+}
+
+html,body{
+    font-family: "微軟正黑體";
+}
+
+html{
+    height:100%;
+}
+
+body,body *{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #212121;
+}
+
+
+/* Grid System */
+/*12 based*/
+.col-xl-3,.col-xl-4,.col-xl-6,.col-xl-12
+.col-lg-3,.col-lg-4,.col-lg-6,.col-lg-12,
+.col-md-3,.col-md-4,.col-md-6,.col-md-12,
+.col-sm-3,.col-sm-4,.col-sm-6,.col-sm-12,
+.col-3,.col-4,.col-6,.col-12{
+    height:100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* xl1200  lg992  md768  sm576   xs  */
+@media screen and (min-width:1200px){ /*xl*/
+    .col-xl-3{width:25%;}
+    .col-xl-4{width:33.33333%;}
+    .col-xl-6{width:50%;}
+    .col-xl-12{width:100%;}
+}
+@media screen and (max-width:1200px){ /*lg*/
+    .col-lg-3{width:25%;}
+    .col-lg-4{width:33.33333%;}
+    .col-lg-6{width:50%;}
+    .col-lg-12{width:100%;}
+}
+@media screen and (max-width:992px){ /*md*/
+    .col-md-3{width:25%;}
+    .col-md-4{width:33.33333%;}
+    .col-md-6{width:50%;}
+    .col-md-12{width:100%;}
+}
+@media screen and (max-width:768px){ /*sm*/
+    .col-sm-3{width:25%;}
+    .col-sm-4{width:33.33333%;}
+    .col-sm-6{width:50%;}
+    .col-sm-12{width:100%;}
+}
+@media screen and (max-width:576px){ /*xs*/
+    .col-3{width:25%;}
+    .col-4{width:33.33333%;}
+    .col-6{width:50%;}
+    .col-12{width:100%;}
+}
+
+
+
+
+
+/* Shared by bout-me,what-i-do, portfolio */
+p.title{
+    color: #4C70EF;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.bout-me .txt-container p.content,.what-i-do p.content{
+    width: 100%;
+    color: #B0ADAD;
+    font-size:18px;
+}
+h1{
+    color: white
+}
+.component{
+    background-color: lightskyblue;
+    width:100%;
+    height:100%;
+}
+
+/* Shard by Portfolio and Contact */
+button{
+    background-color: #558FFF; 
+    height: 41px;
+    color: #fff; 
+    font-size: 14px; 
+    font-weight:600;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer; 
+    border-radius: 5px; 
+    margin-left: 20px;
+    border:none;
+}
+
+button:hover{
+    background-color: #0056b3; 
+}

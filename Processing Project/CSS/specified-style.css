@@ -1,0 +1,316 @@
+/* Two Underscores(__) represents AND.  
+Hyphen(-) does what hyphen does. */
+
+/*------ 
+wrapper 
+------*/
+.wrapper{
+    background-color: rgba(0, 0, 0, 0.25);
+    height:715.2px;
+    background-image:url(../images/night.jpg);
+    background-size: cover;
+    background-position: center center;
+    /* justify-content: center;*/
+    /* Align child elements horizontally */
+    align-items: center; /* Align child elements vertically */
+}
+
+/*---- 
+navbar 
+-----*/
+a.nav-link{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+.navbar *{
+    z-index:10;
+    flex-direction:row;
+    align-items: center;
+}
+
+.navbar {
+    align-items: center;
+} 
+
+.container{
+    width: 1223px;
+    justify-content: center;
+}
+
+a.logo{
+    background-image: url(../images/logo2.png);
+    background-repeat: no-repeat;
+    height:100px; width: 100px;
+    /* transform:scale(0.5); */
+    background-size: contain;
+    margin-left: 60px;
+}
+
+
+/*-------- 
+banner 
+--------*/
+.banner{
+    z-index:1;
+    justify-content: center;
+    height: 615.2px;
+
+}
+
+.banner h1,.banner h2{
+    margin:0;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size:55px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align:center;
+}
+
+.banner p.middle{
+    height:25px;
+}
+
+.banner h2{
+    font-weight:normal;
+    font-size:35px;
+    margin-top: 20px;
+}
+
+.logos{
+    width:100%;
+    z-index:10;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ig,.fb,.gh{
+    z-index: 1;
+    height:50px; width:50px;
+    margin:20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ig{background-image: url(../images/ig-logo.png);}
+.fb{background-image: url(../images/fb-logo.png);}
+.gh{background-image: url(../images/gh-logo.png);}
+
+/* -------------------
+      About Me 
+---------------------*/
+.bout-me{
+    height: 500px;
+    justify-content:center;
+}
+.bout-me .container{
+    width:1180px; height:407px;
+    align-self: center;
+    flex-direction:row;
+}
+.bout-me .photograph{    
+    width: 50%; height:100%;  /*553*/
+    padding-left: 18.5px;
+    padding-right: 18.5px;
+    /* border: 0px; */
+    justify-content: center;
+    align-items:center;
+}
+.bout-me .photograph .img,.hollow-object{  
+    width:263px; height:190px;  /*526  380*/
+    scale:2;
+    align-self: center;
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+.bout-me .photograph .img{
+    top:82px;
+    right:14px;
+    z-index: 2;
+    background-image: url(../images/101501.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.hollow-object{
+    bottom: 82px;
+    left:14px;
+    z-index:0;
+    border:1px solid #D9D9D9;
+    overflow:hidden;
+}
+.bout-me .container .intro{
+    width: 50%; /*580*/
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.bout-me .txt-container{
+    color: white;
+    overflow:hidden;
+}
+
+/* ---------
+What I do 
+----------*/
+.what-i-do{
+    height:500px;
+    justify-content: center;
+}
+.what-i-do .container{
+    height: 360px; width:980px;
+    align-self:center;
+    flex-direction:column;
+}
+.what-i-do .text *{
+    align-items: center;
+}
+.what-i-do .text{
+    margin-bottom: 25px;
+}
+.what-i-do .text,.what-i-do .specialization{
+    width:100%; height:480px;
+}
+.what-i-do .specialization{
+    flex-direction:row;
+}
+.specialization .first{
+    margin-right:10px;
+}
+.specialization .second{
+    margin-left:10px;
+}
+.specialization .card{
+    width:50%; height:206px;
+    background-color: #292c36;
+    border-radius: 16px;
+}
+.specialization .card .img__title{
+    width: 310px; height:72px;
+    margin-top: 23px;
+    flex-direction:row;
+    align-items: center;
+}
+.specialization .card .img-container{
+    width:66px; height:66px;
+    background-color: #38405A;
+    border-radius: 10px;
+    margin-left:23px;
+    justify-content: center;
+    align-items: center;
+}
+.specialization .card .img{
+    width:42px; height:42px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.specialization .first .img{
+    background-image: url(../images/computer.png);
+    margin-left: 7px;
+}
+.specialization .second .img{
+    background-image: url(../images/keyboard.png);
+}
+.specialization p.title{
+    font-size: 24px;
+    width:200px;
+    color:white;
+    font-weight:600;
+    align-items:flex-start;
+    margin: 0px 0px 0px 15px;
+}
+.specialization p.content{
+    width:432px; height:54px;
+    align-self:center;
+}
+
+/* --------
+portfolio
+---------*/
+.portfolio{
+    height: 700px;
+    justify-content: center;
+}
+.portfolio .container{
+    width:1180px; height:540px;
+    align-self:center;
+    flex-direction:column;
+}
+.portfolio .txt-container *{
+    align-items:center;
+}
+.portfolio .txt-container p.title{
+    margin-top: 14px;
+}
+.portfolio .project-cards{
+    width:100%; height:406px;
+    flex-direction:row;
+    justify-content: space-between;
+    /* border:1px solid lightcoral; */
+}
+.portfolio .project-cards .card{
+    width:380px; height: 100%;
+    border-radius: 10px;
+    background-color: #292C36;
+}
+.project-cards .project-img{
+    width:100%; height:283px;
+    border:1px solid white;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+.project-cards .project-name{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-left: 20px;
+}
+
+button.demo{ 
+    width: 128px; 
+}
+
+/*------ 
+contact
+-------*/
+.contact{
+    height:500px;
+    justify-content:center
+}
+.contact .container{
+    width:980px; height:277px;
+    background-color: #292C36;
+    align-self: center;
+    border-radius: 15px;
+}
+.contact h1{
+    align-items:center;
+}
+button.contact-btn{ 
+    width: 133px; 
+    align-self:center;
+}
+
+/*------ 
+footer
+-------*/
+footer{
+    min-height: 100px;
+    width:100%;
+    background-color: #292C36;
+    color:white;
+    justify-content: center;
+}
+footer *{
+    align-items: center;
+}
+footer h3{
+    margin-bottom: 0px;
+}
+footer p{
+    font-size:12px;
+    font-weight: bold;
+}
