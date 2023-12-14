@@ -32,3 +32,41 @@ document.querySelectorAll('a[data-target]').forEach(function (link) {
         });
     });
 });
+// //----------------------------------------------------------
+// function setHeightInPixels(selector, vhValue) {
+//     const element = document.querySelector(selector);
+//     const viewportHeight = window.innerHeight;
+//     const heightInPixels = (viewportHeight * vhValue) / 100;
+//     element.style.height = heightInPixels + 'px';
+// }
+
+// // Usage example
+// const vhValue = 100; // Change this value to the desired vh value
+// setHeightInPixels('header', vhValue);
+//------------------------------------------------------------
+function setSecondInnerHeight() {
+    const outerElement = document.querySelector('header');
+    const firstInnerElement = document.querySelector('header nav');
+    const secondInnerElement = document.querySelector('header .banner');
+
+
+    const outerHeight = outerElement.offsetHeight;
+    const firstInnerHeight = firstInnerElement.offsetHeight;
+    const secondInnerHeight = outerHeight - firstInnerHeight;
+    // Set the height of the second inner element
+    secondInnerElement.style.height = secondInnerHeight + 'px';
+}
+
+// Call the function to set the second inner element's height initially
+setSecondInnerHeight();
+
+// If the heights change dynamically (due to content or window resize), call the function again
+window.addEventListener('resize', setSecondInnerHeight);
+// Or if the heights change due to other actions, call setSecondInnerHeight() accordingly
+//-----------------------------------------------------------------------------------
+const section = document.querySelector('.main'); // Get the section element
+const header = document.querySelector('header'); // Get the header element
+
+// Assigning the height of the header to the section
+section.style.height = header.style.height;
+// alert(section.style.height);
