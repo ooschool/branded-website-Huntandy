@@ -33,6 +33,7 @@ document.querySelectorAll('a[data-target]').forEach(function (link) {
     });
 });
 // //----------------------------------------------------------
+<<<<<<< Updated upstream:Processing Project/script.js
 // function setHeightInPixels(selector, vhValue) {
 //     const element = document.querySelector(selector);
 //     const viewportHeight = window.innerHeight;
@@ -70,3 +71,22 @@ const header = document.querySelector('header'); // Get the header element
 // Assigning the height of the header to the section
 section.style.height = header.style.height;
 // alert(section.style.height);
+=======
+let scrollTop = document.querySelector('.scroll-top');
+
+function toggleScrollTop() {
+  if (scrollTop) {
+    window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+  }
+}
+scrollTop.addEventListener('click', (e) => {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
+window.addEventListener('load', toggleScrollTop);
+document.addEventListener('scroll', toggleScrollTop);
+>>>>>>> Stashed changes:Processing Project/js/script.js

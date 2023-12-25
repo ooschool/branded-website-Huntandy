@@ -1,4 +1,9 @@
+<<<<<<< Updated upstream
 /* Global */
+=======
+/*GLOBAL*/
+@media screen{
+>>>>>>> Stashed changes
 *{
   box-sizing: border-box;
 }
@@ -7,18 +12,80 @@ html,body{
   font-family: "微軟正黑體";
 }
 
+<<<<<<< Updated upstream
 
 nav{  
   height: 80px
+=======
+html{
+  font-size:16px;
+}
+
+
+nav{  
+  height: 80px;
+>>>>>>> Stashed changes
 }
 .container-fluid .navbar-collapse{
   justify-content: flex-end;
 }
 .navbar-brand
 {
+<<<<<<< Updated upstream
   font-size: 32px;
   color: white;
 }
+=======
+  font-size: 2rem;
+  color: white;
+}
+.navbar-brand:hover,.nav-link:hover{
+  color:lightgray;
+}
+}
+
+/* Across Section */
+@media screen {
+  p.title{
+    color: #4C70EF;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom:0;
+  }
+  .bout-me .txt-container p.content,.what-i-do p.content{
+    width: 100%;
+    color: #B0ADAD;
+    font-size:18px;
+    overflow-wrap:break-word;
+    /* word-break:break-all; */
+    /* white-space:pre; */
+  }
+  h1{
+    color: white;
+    font-weight:bold;
+    font-size:2em;
+    margin:0.67em 0;
+  }
+  button{
+    background-color: #558FFF; 
+    height: 41px;
+    color: #fff; 
+    font-size: 14px; 
+    font-weight:600;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer; 
+    border-radius: 5px; 
+    margin-left: 20px;
+    border:none;
+  }
+  
+  button:hover{
+    background-color: #0056b3; 
+  }
+}
+
+>>>>>>> Stashed changes
 header{
   position: relative;
   top: 0;
@@ -27,6 +94,7 @@ header{
   right: 0;
   z-index: 1;
   justify-content:center;
+<<<<<<< Updated upstream
 }
 
 nav{
@@ -45,10 +113,38 @@ nav{
 .navbar-toggler-icon{
   background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 
+=======
+
+  nav{
+    width:90%;
+
+    .navbar-brand{
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      p{
+        margin:0;
+      }
+    }
+    .navbar-toggler-icon{
+      background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+    }
+    a.nav-link{
+      text-decoration: none;
+      color:white;
+      font-weight: bold;
+    }
+    a.nav-link:focus{
+      color:lightgray;
+    }
+  }
+>>>>>>> Stashed changes
 }
 
 
 
+<<<<<<< Updated upstream
 
 a.nav-link{
   text-decoration: none;
@@ -63,12 +159,26 @@ main{
 main *{
   display:flex;
 }
+=======
+/*---------------------------------
+ Main
+----------------------------------*/
+main{
+  background-color:  #212121;
+
+  *{  
+    display:flex;
+  }
+}
+/* BANNER */
+>>>>>>> Stashed changes
 .banner{
   display:flex;
   width: 100%;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+<<<<<<< Updated upstream
   flex-direction: column;
 }
 .banner img{
@@ -360,6 +470,320 @@ button.contact-btn{
 /*------ 
 footer
 -------*/
+=======
+  height: inherit;
+  flex-direction: column;
+
+  img{
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%; height: 100%;
+    -o-object-fit:cover;
+    object-fit:cover;
+    z-index: 0;
+  }
+  .overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%; height: 100%;
+    -o-object-fit:cover;
+    object-fit:cover;
+    z-index: 0;
+  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+      margin-bottom:0.5rem;
+      font-weight: bold;
+      /* font-size:55px; */
+      font-size: 3.4375rem;
+    }
+    h2{
+      font-weight:normal;
+      font-size:35px;
+      margin-top: 20px;
+    }
+    h1,h2{  
+      color: white;
+      font-family: 'Ubuntu', sans-serif;
+    }
+    h1,h2,div{
+      z-index: 1;
+    }
+    .logos{ 
+      display:flex;
+      width:100%;
+      z-index:10;
+      flex-direction:row;
+      align-items: center;
+      justify-content: center;
+
+      .ig{background-image: url(../images/ig-logo.png);}
+      .fb{background-image: url(../images/fb-logo.png);}
+      .gh{background-image: url(../images/gh-logo.png);}
+      .ig,.fb,.gh{
+        height:3.5rem; width:3.5rem;
+        margin:20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+/*ABOUT ME*/
+.bout-me{
+  height: 500px; width:100%;
+  justify-content:center;
+
+  *{
+    position: relative;
+  }
+  .container,.row{
+    width:100%; height:407px;
+    margin:0; padding: 0;
+    align-self: center;
+    flex-direction:row;
+  }
+  .row{
+    .photograph{
+      width: 50%; 
+      /* height:100%;  */
+      padding-left: 1.15625rem;
+      padding-right: 1.15625rem;
+      border: 0px;
+      justify-content: center;
+      align-items:center;
+      flex-direction: column;
+
+      .img{
+        top:82px; 
+        right:14px;
+        z-index: 2;
+        background-image: url(../images/101501.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+      .hollow-object{
+        bottom: 82px;
+        left:14px;
+        z-index:0;
+        border:1px solid #D9D9D9;
+        overflow:hidden;
+      }
+      .img,.hollow-object{
+        width:263px; 
+        height:190px;  
+        /*526  380*/
+        scale:2;
+        align-self: center;
+        border-top-left-radius: 32px;
+        border-bottom-right-radius: 32px;
+      }
+    }
+    .intro{
+      width: 50%; 
+      padding-left: 10px;
+      padding-right: 10px;
+
+      .txt-container{
+        flex-direction: column;
+        color: white;
+
+        p.title{
+          padding-top:26px;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+}
+
+/*WHAT I DO*/
+.what-i-do{
+  height:500px;
+  justify-content: center;
+
+  .container{
+    /* height: 360px;  */
+    width:64%;
+    align-self:center;
+    flex-direction:column;
+
+    .wid-titles{
+      margin-bottom: 25px;
+      flex-direction: column;
+
+      *{
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .specialization{
+      flex-direction:row;
+      flex-wrap: nowrap;
+
+      p{
+        word-wrap:break-word;
+      }
+      .first{
+        margin-right: 10px;
+
+        .img{
+          background-image: url(../images/computer.png);
+          margin-left: 7px;
+        }
+      }
+      .second{
+        margin-left: 10px;
+
+        .img{
+          background-image: url(../images/keyboard.png);
+        }
+      }
+      .card{
+        width:50%; 
+        /* height:206px; */
+        background-color: #292c36;
+        border-radius: 16px;
+
+        .img__title{
+          width: 310px; height:72px;
+          margin-top: 23px;
+          flex-direction:row;
+          align-items: center;
+        
+          .img-container{
+            width:66px; height:66px;
+            background-color: #38405A;
+            border-radius: 10px;
+            margin-left:23px;
+            justify-content: center;
+            align-items: center;
+
+            .img{
+              width:42px; height:42px;
+              background-repeat: no-repeat;
+              background-size: contain;
+            }
+          }
+          p.title{
+            font-size: 24px;
+            width:200px;
+            color:white;
+            font-weight:600;
+            align-items:flex-start;
+            margin: 0px 0px 0px 15px;
+          }
+        }
+        p.content{
+          width:100%;
+          overflow-wrap: break-word;
+          margin-left: 23px;
+          align-self:center;
+          /* overflow-y: auto; */
+        }
+      }
+    }
+    .wid-titles,.specialization{
+      /* width:100%;  */
+      /* height:480px; */
+    }
+  }
+}
+
+/*PORTFOLIO*/
+.portfolio{
+  height: 700px;
+  justify-content: center;
+
+  .container{
+    width:1180px; 
+    height:540px;
+    align-self:center;
+    flex-direction:column;
+
+    .txt-container{
+      flex-direction: column;
+
+      *{
+        align-items:center;
+        justify-content: center;
+      }
+      p.title{
+        margin-top: 14px;
+      }
+    }
+    .project-cards,.row{
+      width:100%; height:406px;
+      flex-direction:row;
+      justify-content: space-between;
+      /* border:1px solid lightcoral; */
+
+      .card{
+        width:33%; height: 100%;
+        border-radius: 10px;
+        background-color: #292C36;
+        padding:0;
+
+        .project-img{
+          width:100%; height:283px;
+          border:1px solid white;
+          border-top-left-radius:10px;
+          border-top-right-radius:10px;
+        }
+        .p__button{
+          flex-direction: column;
+          justify-content: space-between;
+
+          .project-name{
+            font-size: 20px;
+            font-weight: 600;
+            color: white;
+            margin-left: 20px;
+          }
+          button.demo{
+            width:128px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* CONTACT */
+.contact{
+  height:500px;
+  justify-content:center;
+
+  .container{
+    width:64%; 
+    height:277px;
+    background-color: #292C36;
+    align-self: center;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+
+    h1{
+      justify-content: center;
+    }
+    button.contact-btn{
+      width: 133px; 
+      align-self: center;
+    }
+  }
+}
+
+/*---------------------------------
+ Footer
+----------------------------------*/
+>>>>>>> Stashed changes
 footer{
   display:flex;
   flex-direction: column;
@@ -368,6 +792,7 @@ footer{
   background-color: #292C36;
   color:white;
   justify-content: center;
+<<<<<<< Updated upstream
 }
 footer *{
   display: flex;
@@ -380,4 +805,64 @@ footer h3{
 footer p{
   font-size:12px;
   font-weight: bold;
+=======
+
+  *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+  h3{
+    margin-block-start:1em;
+    margin-bottom: 0px;
+    font-size:1.17em;
+    font-weight:bold;
+  }
+  p{
+    font-size:12px;
+    font-weight: bold;
+    margin-top:12px;
+  }
+}
+
+
+
+/*---------------------------------
+ Widget
+----------------------------------*/
+/* Scroll To Top Button */
+@media screen {
+  .scroll-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    /* background-color: var(--primary-color); */
+    background-color: #4C70EF;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+
+  .scroll-top svg {
+    /* font-size: 24px; */
+    color: whitesmoke;
+    line-height: 0;
+  }
+
+  .scroll-top:hover{
+    /* background-color: rgba(var(--primary-color-rgb), 0.8); */
+    background-color: #4C70EF;
+    opacity:0.7 !important;
+    /* color: #ffffff; */
+  }
+
+  .scroll-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+>>>>>>> Stashed changes
 }
