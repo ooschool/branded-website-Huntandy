@@ -1,9 +1,5 @@
-<<<<<<< Updated upstream
-/* Global */
-=======
 /*GLOBAL*/
 @media screen{
->>>>>>> Stashed changes
 *{
   box-sizing: border-box;
 }
@@ -12,11 +8,6 @@ html,body{
   font-family: "微軟正黑體";
 }
 
-<<<<<<< Updated upstream
-
-nav{  
-  height: 80px
-=======
 html{
   font-size:16px;
 }
@@ -24,18 +15,12 @@ html{
 
 nav{  
   height: 80px;
->>>>>>> Stashed changes
 }
 .container-fluid .navbar-collapse{
   justify-content: flex-end;
 }
 .navbar-brand
 {
-<<<<<<< Updated upstream
-  font-size: 32px;
-  color: white;
-}
-=======
   font-size: 2rem;
   color: white;
 }
@@ -85,7 +70,6 @@ nav{
   }
 }
 
->>>>>>> Stashed changes
 header{
   position: relative;
   top: 0;
@@ -94,26 +78,6 @@ header{
   right: 0;
   z-index: 1;
   justify-content:center;
-<<<<<<< Updated upstream
-}
-
-nav{
-  width:90%;
-}
-
-.navbar-brand{
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.navbar-brand p{
-  margin:0;
-}
-
-.navbar-toggler-icon{
-  background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
-
-=======
 
   nav{
     width:90%;
@@ -139,27 +103,10 @@ nav{
       color:lightgray;
     }
   }
->>>>>>> Stashed changes
 }
 
 
 
-<<<<<<< Updated upstream
-
-a.nav-link{
-  text-decoration: none;
-  color:white;
-  font-weight: bold;
-}
-
-/* main */
-main{
-  background-color:  #212121;;
-}
-main *{
-  display:flex;
-}
-=======
 /*---------------------------------
  Main
 ----------------------------------*/
@@ -171,306 +118,12 @@ main{
   }
 }
 /* BANNER */
->>>>>>> Stashed changes
 .banner{
   display:flex;
   width: 100%;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-<<<<<<< Updated upstream
-  flex-direction: column;
-}
-.banner img{
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%; height: 100%;
-  -o-object-fit:cover;
-  object-fit:cover;
-  z-index: 0;
-}
-
-.banner h1,.banner h2,.banner div{
-  z-index: 1;
-}
-
-.banner h1,.banner h2{
-  color: white;
-  font-weight: bold;
-  font-size:55px;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.banner h2{
-  font-weight:normal;
-  font-size:35px;
-  margin-top: 20px;
-}
-
-.logos{
-  display:flex;
-  width:100%;
-  z-index:10;
-  flex-direction:row;
-  align-items: center;
-  justify-content: center;
-}
-
-.ig,.fb,.gh{
-  /* z-index: 1; */
-  height:50px; width:50px;
-  margin:20px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.ig{background-image: url(../images/ig-logo.png);}
-.fb{background-image: url(../images/fb-logo.png);}
-.gh{background-image: url(../images/gh-logo.png);}
-
-/* About Me */
-.bout-me{
-  height: 500px; width:100%;
-  justify-content:center;
-}
-.bout-me *{position:relative}
-.bout-me .container{
-  width:100%; height:407px;
-  margin:0; padding: 0;
-  align-self: center;
-  flex-direction:row;
-}
-
-.bout-me .photograph{    
-  width: 50%; height:100%;  /*553*/
-  padding-left: 18.5px;
-  padding-right: 18.5px;
-  border: 0px;
-  justify-content: center;
-  align-items:center;
-  flex-direction: column;
-}
-
-.bout-me .photograph .img,.hollow-object{  
-  width:263px; height:190px;  /*526  380*/
-  scale:2;
-  align-self: center;
-  border-top-left-radius: 32px;
-  border-bottom-right-radius: 32px;
-}
-
-.bout-me .photograph .img{
-  top:82px; 
-  right:14px;
-  z-index: 2;
-  background-image: url(../images/101501.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.hollow-object{
-  bottom: 82px;
-  left:14px;
-  z-index:0;
-  border:1px solid #D9D9D9;
-  overflow:hidden;
-}
-
-.bout-me .container .intro{
-  width: 50%; /*580*/
-  padding-left: 10px;
-  padding-right: 10px;
-
-}
-.bout-me .txt-container{
-  top:27px;
-  flex-direction: column;
-  color: white;
-  overflow:hidden;
-}
-
-p.title{
-  color: #4C70EF;
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-.bout-me .txt-container p.content,.what-i-do p.content{
-  width: 100%;
-  color: #B0ADAD;
-  font-size:18px;
-}
-h1{
-  color: white
-}
-/* WHAT i DO */
-.what-i-do{
-  height:500px;
-  justify-content: center;
-}
-.what-i-do .container{
-  height: 360px; width:64%;
-  align-self:center;
-  flex-direction:column;
-}
-.what-i-do .text{
-  margin-bottom: 25px;
-  flex-direction: column;
-}
-.what-i-do .text *{
-  align-items: center;
-  justify-content: center;
-}
-.what-i-do .text,.what-i-do .specialization{
-  width:100%; height:480px;
-}
-.what-i-do .specialization{
-  flex-direction:row;
-}
-
-.specialization .first{
-  margin-right:10px;
-}
-.specialization .second{
-  margin-left:10px;
-}
-.specialization .card{
-  width:50%; height:206px;
-  background-color: #292c36;
-  border-radius: 16px;
-}
-.specialization .card .img__title{
-  width: 310px; height:72px;
-  margin-top: 23px;
-  flex-direction:row;
-  align-items: center;
-}
-.specialization .card .img-container{
-  width:66px; height:66px;
-  background-color: #38405A;
-  border-radius: 10px;
-  margin-left:23px;
-  justify-content: center;
-  align-items: center;
-}
-.specialization .card .img{
-  width:42px; height:42px;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-.specialization .first .img{
-  background-image: url(../images/computer.png);
-  margin-left: 7px;
-}
-.specialization .second .img{
-  background-image: url(../images/keyboard.png);
-}
-.specialization p.title{
-  font-size: 24px;
-  width:200px;
-  color:white;
-  font-weight:600;
-  align-items:flex-start;
-  margin: 0px 0px 0px 15px;
-}
-.specialization p.content{
-  width:432px; height:54px;
-  align-self:center;
-}
-
-/* portfolio */
-.portfolio{
-  height: 700px;
-  justify-content: center;
-}
-.portfolio .container{
-  width:1180px; height:540px;
-  align-self:center;
-  flex-direction:column;
-}
-.portfolio .txt-container{
-  flex-direction: column;
-}
-.portfolio .txt-container *{
-  align-items:center;
-  justify-content: center;
-}
-.portfolio .txt-container p.title{
-  margin-top: 14px;
-}
-.portfolio .project-cards{
-  width:100%; height:406px;
-  flex-direction:row;
-  justify-content: space-between;
-  /* border:1px solid lightcoral; */
-}
-.portfolio .project-cards .card{
-  width:33%; height: 100%;
-  border-radius: 10px;
-  background-color: #292C36;
-}
-.project-cards .project-img{
-  width:100%; height:283px;
-  border:1px solid white;
-  border-top-left-radius:10px;
-  border-top-right-radius:10px;
-}
-.project-cards .project-name{
-  font-size: 20px;
-  font-weight: 600;
-  color: white;
-  margin-left: 20px;
-}
-
-button.demo{ 
-  width: 128px; 
-}
-button{
-  background-color: #558FFF; 
-  height: 41px;
-  color: #fff; 
-  font-size: 14px; 
-  font-weight:600;
-  align-items: center;
-  justify-content:center;
-  cursor: pointer; 
-  border-radius: 5px; 
-  margin-left: 20px;
-  border:none;
-}
-
-button:hover{
-  background-color: #0056b3; 
-}
-
-/*------ 
-contact
--------*/
-.contact{
-  height:500px;
-  justify-content:center
-}
-.contact .container{
-  width:980px; height:277px;
-  background-color: #292C36;
-  align-self: center;
-  border-radius: 15px;
-  flex-direction: column;
-  justify-content: center;
-}
-.contact h1{
-  justify-content: center;
-}
-button.contact-btn{ 
-  width: 133px; 
-  align-self: center;
-}
-
-/*------ 
-footer
--------*/
-=======
   height: inherit;
   flex-direction: column;
 
@@ -783,7 +436,6 @@ footer
 /*---------------------------------
  Footer
 ----------------------------------*/
->>>>>>> Stashed changes
 footer{
   display:flex;
   flex-direction: column;
@@ -792,20 +444,6 @@ footer{
   background-color: #292C36;
   color:white;
   justify-content: center;
-<<<<<<< Updated upstream
-}
-footer *{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer h3{
-  margin-bottom: 0px;
-}
-footer p{
-  font-size:12px;
-  font-weight: bold;
-=======
 
   *{
     display: flex;
@@ -864,5 +502,4 @@ footer p{
     visibility: visible;
     opacity: 1;
   }
->>>>>>> Stashed changes
 }
